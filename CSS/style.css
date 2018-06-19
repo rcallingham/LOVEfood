@@ -3,27 +3,33 @@
    text-align: center;
    background: url("Londonsky.jpg");
    background-size: cover;
-   color: white;
    height: 500px;
-   top: 0;
-
+   background-position: top;
 }
 
 a {
   color: white;
 }
 h1 {
+  top: 40%;
   font-size: 70px;
+  padding-top: 10%;
 }
-img {
-  border: 7px solid white;
-  size: cover;
-}
+
 #header-list {
-   text-align: right;
+  float: right;
    padding: 10px;
-   color: black;
-   position: sticky;
+   background-color: rgba(128,28,7);
+   position: fixed;
+   float: right;
+   display: block;
+   width: 100%;
+   top: 0%
+}
+
+#header-list ul {
+
+  float: right;
 }
 #footer-list {
    text-align: right;
@@ -37,21 +43,35 @@ li {
    display: inline;
    padding: 0px 10px 0px 10px;
 }
+#body {
+background-color: rgba(128,28,7);
+padding: 5px 0px 5px 0px;
+
+
+}
+
+#body2 {
+  background-image: url("tube-map.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+
+}
 #body h2 {
-    font-size: 30px;
+    font-size: 45px;
     text-align: center;
-    color: black;
+    color: white;
 }
 
 #body h3 {
     font-size: 20px;
     text-align: center;
     color: white;
-    background-color: black;
 }
 #footer-list img {
-  height: 10px;
-  width: 10px;
+  height: 20px;
+  width: 20px;
 
 .key {
     display: inline;
