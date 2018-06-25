@@ -1,0 +1,14 @@
+
+.location-tag {
+  display: flex;
+  justify-content: flex-end;
+}
+
+li {
+  color: white;
+}
+
+.btn {
+  background-color: rgba(128,128,128,.8);
+  color: white;
+}

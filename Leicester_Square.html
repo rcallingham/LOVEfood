@@ -7,14 +7,15 @@
    }
 
    .center-div {
-        margin: 100px auto;
+        margin: 150px auto 50px;
         max-width: 600px;
         background: ;
-        background: linear-gradient(bottom,rgba(255,0,0,1), rgba(255,0,0,.4));
+        background: linear-gradient(bottom,rgba(255,255,255,.8), rgba(255,255,255,.2));
         background: -webkit-linear-gradient(bottom,rgba(255,255,255,.8), rgba(255,255,255,.2));
-        background: -moz-linear-gradient(bottom,rgba(0,0,0,1), rgba(0,0,0,.4));
+        background: -moz-linear-gradient(bottom,rgba(255,255,255,.8), rgba(255,255,255,.2));
         border-radius: 5px;
         position: sticky;
+        height: 300px;
    }
 
 body {
@@ -29,9 +30,9 @@ body {
     text-align: cent;
     color: black;
     font-family:'Roboto', sans-serif;
-    padding-top: 10px;
-    font-size: 2em;
-    padding-left: 10px;
+    padding-top: 20px;
+    font-size: 2.5em;
+    padding-left: 20px;
   }
 
   p {
@@ -45,13 +46,13 @@ body {
   }
   .div-key {
     display: flex;
-    justify-content: center;
     justify-content: space-around;
   }
 
   .div-h2 {
-    padding-left: 10px;
+    padding-left: 20px;
     color: black;
+    font-size: 1.5em;
   }
 
   .key {
@@ -75,9 +76,6 @@ body {
      top: 0%
    }
 
-   a {
-     color: white;
-   }
 
    li {
       display: inline;
@@ -85,8 +83,7 @@ body {
    }
 
    #header-list ul {
-
-     float: right;
+      float: right;
    }
 
    #footer-list {
@@ -115,14 +112,24 @@ body {
     margin: 10px 0px;
  }
 
+ a {
+   color: white;
+ }
+
 
 </style>
 
 <html>
 
 <head>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href='css/bootstrap.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="CSS/main.css" rel="stylesheet">
+
   <title>LOVEfood💕🍴</title>
+
 </head>
 
 
@@ -141,17 +148,21 @@ body {
 <div class="center-div">
   <h1 class="div-h1">NOPI</h1>
   <h2 class="div-h2">Middle Eastern and Asian-inspired Sharing</h2>
-  <p>Our Soho-based restaurant has some of the Ottolenghi trademarks – platters full of salads greet customers as they arrive, a menu which celebrates bold flavours – but NOPI has a very different feel to the Ottolenghi delis.</p>
+  <p>Our Soho-based restaurant has some of the Ottolenghi trademarks – platters full of salads greet customers as they arrive, a menu which celebrates bold flavours – but NOPI has a very different feel to the Ottolenghi delis. moreeeeeee eenfind ihndindi isnsioiof iosndiondsio oiwhisonwuin ioahsuihg sys usbsuifbdl usuhd9 ihdie siohdih.</p>
   <ul class="div-key">
     <li class="key" id="pound">£££</li>
     <li class="key" id="heart">&#9825;&#9825;</li>
     <li class="key" id="star">&#9885;&#9885;&#9885;</li>
   </ul>
-  <a id="location" href="https://www.google.co.uk/maps/place/Nopi/@51.511715,-0.138518,15z/data=!4m5!3m4!1s0x0:0x5e42ea415103d817!8m2!3d51.511715!4d-0.138518">Location</a>
+
+     <a class=location-tag href="https://www.google.co.uk/maps/place/Nopi/@51.511715,-0.138518,15z/data=!4m5!3m4!1s0x0:0x5e42ea415103d817!8m2!3d51.511715!4d-0.138518">
+          <span class="glyphicon glyphicon-map-marker"></span>
+        </a>
+
 </div>
 
 <div id="button">
-<a class="btn btn-default" href="https://ottolenghi.co.uk/nopi" role="button">Visit site</a>
+<a class="btn btn-default btn-lg" href="https://ottolenghi.co.uk/nopi" role="button">Visit site</a>
 </div>
 
 <footer>
