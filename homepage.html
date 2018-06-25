@@ -4,17 +4,24 @@
    text-align: center;
    background: url("Londonsky.jpg");
    background-size: cover;
-   height: 500px;
+   height: 670px;
    background-position: top;
+
 }
 
 a {
   color: white;
 }
-h1 {
+#heading h1 {
   top: 40%;
-  font-size: 100px;
+  font-size: 200px;
   padding-top: 10%;
+}
+
+#heading h2 {
+
+  font-size: 70px;
+
 }
 
 #header-list {
@@ -32,6 +39,12 @@ h1 {
 
   float: right;
 }
+
+#header-list a {
+
+  color: white;
+}
+
 #footer-list {
    text-align: right;
    padding: 10px;
@@ -51,6 +64,8 @@ padding: 5px 0px 5px 0px;
 
 }
 
+
+
 #body2 {
   background-image: url("tube-map.png");
   background-position: center;
@@ -65,6 +80,8 @@ padding: 5px 0px 5px 0px;
     color: white;
 }
 
+
+
 #body h3 {
     font-size: 20px;
     text-align: center;
@@ -75,10 +92,17 @@ padding: 5px 0px 5px 0px;
   width: 20px;
 
    }
+
+#button {
+  background-color: rgba(128,28,7);
+  color: white;
+}
+
 </style>
 
 <html>
 <head>
+  <link href='css/bootstrap.min.css' rel='stylesheet'>
   <title>LOVEfood💕🍴</title>
 </head>
 
@@ -95,11 +119,11 @@ padding: 5px 0px 5px 0px;
     </ul>
   </div>
 
-  <div id="heading">
-    <h1>LOVEfood</h1>
-    <h2>Is romance on the menu?</h2>
-    <h3>Guide to London's best date location</h3>
-  </div>
+    <div id="heading">
+      <h1>LOVEfood</h1>
+      <h2>Is romance on the menu?</h2>
+      <h3>Guide to London's best date location</h3>
+    </div>
 
   <div id='body'>
     <h2>
@@ -109,18 +133,40 @@ padding: 5px 0px 5px 0px;
       We've found mouth-watering menus so you can CRUSH IT on your next date night:
     </h3>
   </div>
-<div id ='body2'>
+
+
+
+      <div style="display: flex; justify-content: center;">
+        <img id = "tube" src="tube-map.png" alt="" usemap="#Map" />
+        <map name="Map" id="Map">
+            <area alt="" title="" href="Leicester_Square.html" shape="poly" coords="579,615,604,616,605,640,583,640" />
+
+        </map>
+      </div>
+
+
 
 </div>
 
 <footer>
 <div id="footer-list">
   <ul>
+    <form style="float: left" action="">
+    Subscribe:<input style="color: black" type="text" name="email">
+    <input type="button" class="btn btn-danger" style="color: black" onclick="myFunction()" value="Submit">
+    </form>
     <li>Contact</li>
     <a target="_blank" title="find us on Facebook" href="http://www.facebook.com"><img alt="find us on facebook" src="//login.create.net/images/icons/user/facebook-b_130x50.png" border=0></a>
     <a target="_blank" title="follow me on instagram" href="http://www.instagram.com"><img alt="follow me on instagram" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram30x30.png" border=0></a>
   </ul>
 </div>
+
+<Script>
+  function myFunction () {
+    alert("Thanks! We'll be in touch soon!")
+  }
+</script>
+
 </footer>
 </body>
 </html>
